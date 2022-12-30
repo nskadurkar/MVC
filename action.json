@@ -1,0 +1,41 @@
+{
+  "actions": [
+     {
+       "description": "Default Welcome Intent",
+       "name": "MAIN",
+       "fulfillment": {
+         "conversationName": "welcome"
+       },
+       "intent": {
+         "name": "actions.intent.MAIN",
+         "trigger": {
+           "queryPatterns":["talk to Imoderna"]
+         }
+       }
+     },
+   {
+       "description": "Rasa Intent",
+       "name": "TEXT",
+       "fulfillment": {
+         "conversationName": "rasa_intent"
+       },
+       "intent": {
+         "name": "actions.intent.TEXT",
+         "trigger": {
+           "queryPatterns":[]
+         }
+       }
+     }],
+   "conversations": {
+     "welcome": {
+       "name": "welcome",
+       "url": "https://139d-2402-8100-3096-4f7b-65ac-6fd5-a89c-bc0f.in.ngrok.io/webhooks/google_assistant/webhook",
+       "fulfillmentApiVersion": 2
+   },
+     "rasa_intent": {
+       "name": "rasa_intent",
+       "url": "https://139d-2402-8100-3096-4f7b-65ac-6fd5-a89c-bc0f.in.ngrok.io/webhooks/google_assistant/webhook",
+       "fulfillmentApiVersion": 2
+   }
+ }
+}
