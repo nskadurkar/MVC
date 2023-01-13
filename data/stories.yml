@@ -839,6 +839,11 @@ stories:
   - intent: ncc
   - action: utter_ncc
 
+- story: path 4
+  steps:
+  - intent: bot_name
+  - action: utter_bot_name  
+
 
 
     

@@ -347,6 +347,8 @@ intents:
     use_entities: true
 - pg_admissiom:
     use_entities: true
+- bot_name:
+    use_entities: true    
 entities: []
 slots: {}
 responses:
@@ -389,6 +391,10 @@ responses:
     - payload: /awards
       title: Awards
     text: I am chatbot designed for Modern College. How can I assist you
+
+  utter_bot_name:
+  - text: "Enthiran 3.0"
+
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
